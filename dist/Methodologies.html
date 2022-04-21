@@ -63,6 +63,7 @@
 	    
 	    <div> This is another test </div>
         
+	<div>
         <script type="text/javascript">
 
 			//Load in data
@@ -106,7 +107,7 @@
 				.enter()
 				.append("circle")
 					.attr("r", function(d){
-						if(d.color == "gray"){ return 2;} else {return 10;}
+						if(d.color == "gray"){ return 20;} else {return 10;}
 
 					})
 				.style("fill", function(d) {
@@ -194,7 +195,7 @@
 			
 
         </script>
-  
+	</div>
 <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
