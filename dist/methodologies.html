@@ -79,13 +79,13 @@
 				dataset.nodes = json.nodes;
 				dataset.edges = json.edges;
 						
-			    	let w = 1000;
-				let h = 700;
-				let padding = 100;
+			    	let w = 100%;
+				let h = 50%;
+				let padding = 150;
 
 				let force = d3.forceSimulation(dataset.nodes)
 				.force("charge", d3.forceManyBody())
-				.force("link", d3.forceLink(dataset.edges).strength(0.2).distance(100))
+				.force("link", d3.forceLink(dataset.edges).strength(0.1).distance(100))
 				.force("center", d3.forceCenter().x(w/2).y(30+h/2))
 				.force("collision", d3.forceCollide(20));
 
@@ -100,7 +100,7 @@
 				.enter()
 				.append("line")
 				.style("stroke", "#ccc")
-				.style("stroke-width", 1);
+				.style("stroke-width", 1.5);
 
 				let nodes = svg.selectAll("circle")
 				.data(dataset.nodes)
@@ -124,8 +124,8 @@
 					.attr("x", d.x + 15)             
 					.attr("y", d.y)
 					.attr("font-size", "14px") 
-					.attr("font-family", "sans-serif") 
-					.text(d.label);
+					.attr("font-family", "serif") 
+					.text(d.label + "test");
 				})
 				.call(d3.drag()  //Define what to do on drag events
 						.on("start", dragStarted)
