@@ -2,6 +2,7 @@
     "nodes": [
         {
             "label": "1",
+            "name": "Cult Relief of Mithras Slaying the Bull (Tauroctony) Larger",
             "color": "gray"
         },
         {
@@ -50,6 +51,7 @@
         },
         {
             "label": "2",
+            "name": "Cult Relief of Mithras Slaying the Bull (Tauroctony) Smaller",
             "color": "gray"
         },
         {
@@ -74,6 +76,7 @@
         },
         {
             "label": "3",
+            "name": "pictures of the twelve signs of the zodic",
             "color": "gray"
         },
         {
@@ -110,6 +113,7 @@
         },
         {
             "label": "4",
+            "name": "Altar",
             "color": "gray"
         },
         {
@@ -126,6 +130,7 @@
         },
         {
             "label": "5",
+            "name": "A Latin inscription",
             "color": "gray"
         },
         {
@@ -146,6 +151,7 @@
         },
         {
             "label": "6",
+            "name": "a large tauroctony",
             "color": "gray"
         },
         {
@@ -170,6 +176,7 @@
         },
         {
             "label": "7",
+            "name": "Two fragmentary clean-shaven portraits",
             "color": "gray"
         },
         {
@@ -189,124 +196,59 @@
             "color": "yellow"
         },
         {
-            "label": "",
-            "color": "violet"
-        },
-        {
-            "label": "i: Phase A",
-            "color": "brown"
-        },
-        {
-            "label": "???",
-            "color": "purple"
-        },
-        {
             "label": "8",
+            "name": "the banquet of Mithras and Sol",
             "color": "gray"
-        },
-        {
-            "label": "the banquet of Mithras and Sol",
-            "color": "red"
-        },
-        {
-            "label": "Since part of this painting was found covered by the newly constructed spelaeum of the last building phase, we know for certain that it belongs to the phase preceding the final decoration.",
-            "color": "blue"
-        },
-        {
-            "label": "1935.99a",
-            "color": "yellow"
-        },
-        {
-            "label": "on the back wall above the south bench",
-            "color": "violet"
-        },
-        {
-            "label": "i: Phase B",
-            "color": "brown"
-        },
-        {
-            "label": "https://artgallery.yale.edu/collections/objects/6892",
-            "color": "purple"
         },
         {
             "label": "9",
+            "name": "another head of Sol",
             "color": "gray"
-        },
-        {
-            "label": "another head of Sol",
-            "color": "red"
-        },
-        {
-            "label": "Dirven, 172 (fig, 16.4, b)",
-            "color": "orange"
-        },
-        {
-            "label": "narrative scene in addition to the banquet",
-            "color": "blue"
-        },
-        {
-            "label": "A head in three-quarter view in the same style with the same dimensions.Probably this narrative cycle was also set around the arch.",
-            "color": "violet"
         },
         {
             "label": "10",
+            "name": "two beardless figures with Phrygian caps",
             "color": "gray"
-        },
-        {
-            "label": "two beardless figures with Phrygian caps",
-            "color": "red"
-        },
-        {
-            "label": "Dirven, 172 (fig, 16.4, c)",
-            "color": "orange"
-        },
-        {
-            "label": "1935.99C",
-            "color": "yellow"
-        },
-        {
-            "label": "Probably this narrative cycle was also set around the arch.",
-            "color": "violet"
         },
         {
             "label": "11",
+            "name": "A fragment of a bull's head",
             "color": "gray"
-        },
-        {
-            "label": "A fragment of a bull's head",
-            "color": "red"
-        },
-        {
-            "label": "Dirven, 172 (fig, 16.4, d)",
-            "color": "orange"
-        },
-        {
-            "label": "narrative scene in addition to the banquet. Pearson identifies the bull as belonging to the tauroctony above the arch, but the fragment suggests the animal faced frontally, which is highly unusual for a bull-killing scene.",
-            "color": "blue"
-        },
-        {
-            "label": "1935.99E",
-            "color": "yellow"
         },
         {
             "label": "12",
+            "name": "a crouching figure wearing tunic and trousers, above which are the feet of two other figures.",
             "color": "gray"
         },
         {
-            "label": "",
-            "color": "red"
+            "label": "13",
+            "name": "faint remains of five signs of the zodiac.",
+            "color": "gray"
         },
         {
-            "label": "",
-            "color": "orange"
+            "label": "14",
+            "name": "",
+            "color": "gray"
         },
         {
-            "label": "",
-            "color": "green"
+            "label": "15",
+            "name": "a large tauroctony ",
+            "color": "gray"
         },
         {
-            "label": "",
-            "color": "brown"
+            "label": "16",
+            "name": "fragments of the portraits of Mithraic initiates. ",
+            "color": "gray"
+        },
+        {
+            "label": "17",
+            "name": " the cult furniture - two benches, the two easternmost columns, the raised podium, and the round engaged altar. ",
+            "color": "gray"
+        },
+        {
+            "label": "18",
+            "name": "the banquet of Mithras and Sol",
+            "color": "gray"
         }
     ],
     "edges": [
@@ -344,7 +286,7 @@
         },
         {
             "source": 1,
-            "target": 77
+            "target": 31
         },
         {
             "source": 1,
@@ -352,7 +294,7 @@
         },
         {
             "source": 1,
-            "target": 77
+            "target": 31
         },
         {
             "source": 13,
@@ -388,7 +330,7 @@
         },
         {
             "source": 13,
-            "target": 77
+            "target": 31
         },
         {
             "source": 13,
@@ -396,7 +338,7 @@
         },
         {
             "source": 13,
-            "target": 77
+            "target": 31
         },
         {
             "source": 19,
@@ -408,7 +350,7 @@
         },
         {
             "source": 19,
-            "target": 77
+            "target": 31
         },
         {
             "source": 19,
@@ -416,11 +358,11 @@
         },
         {
             "source": 19,
-            "target": 77
+            "target": 31
         },
         {
             "source": 19,
-            "target": 77
+            "target": 31
         },
         {
             "source": 19,
@@ -432,7 +374,7 @@
         },
         {
             "source": 19,
-            "target": 77
+            "target": 31
         },
         {
             "source": 19,
@@ -440,7 +382,7 @@
         },
         {
             "source": 19,
-            "target": 77
+            "target": 31
         },
         {
             "source": 28,
@@ -452,7 +394,7 @@
         },
         {
             "source": 28,
-            "target": 77
+            "target": 31
         },
         {
             "source": 28,
@@ -460,11 +402,11 @@
         },
         {
             "source": 28,
-            "target": 77
+            "target": 31
         },
         {
             "source": 28,
-            "target": 77
+            "target": 31
         },
         {
             "source": 28,
@@ -476,15 +418,15 @@
         },
         {
             "source": 28,
-            "target": 77
+            "target": 31
         },
         {
             "source": 28,
-            "target": 77
+            "target": 31
         },
         {
             "source": 28,
-            "target": 77
+            "target": 31
         },
         {
             "source": 32,
@@ -504,11 +446,11 @@
         },
         {
             "source": 32,
-            "target": 77
+            "target": 31
         },
         {
             "source": 32,
-            "target": 77
+            "target": 31
         },
         {
             "source": 32,
@@ -520,15 +462,15 @@
         },
         {
             "source": 32,
-            "target": 77
+            "target": 31
         },
         {
             "source": 32,
-            "target": 77
+            "target": 31
         },
         {
             "source": 32,
-            "target": 77
+            "target": 31
         },
         {
             "source": 37,
@@ -548,11 +490,11 @@
         },
         {
             "source": 37,
-            "target": 77
+            "target": 31
         },
         {
             "source": 37,
-            "target": 77
+            "target": 31
         },
         {
             "source": 37,
@@ -564,15 +506,15 @@
         },
         {
             "source": 37,
-            "target": 77
+            "target": 31
         },
         {
             "source": 37,
-            "target": 77
+            "target": 31
         },
         {
             "source": 37,
-            "target": 77
+            "target": 31
         },
         {
             "source": 43,
@@ -592,43 +534,175 @@
         },
         {
             "source": 43,
-            "target": 50
+            "target": 47
         },
         {
             "source": 43,
-            "target": 77
+            "target": 31
         },
         {
             "source": 43,
-            "target": 77
+            "target": 31
         },
         {
             "source": 43,
-            "target": 49
+            "target": null
         },
         {
             "source": 43,
-            "target": 77
+            "target": 31
         },
         {
             "source": 43,
-            "target": 50
+            "target": 47
         },
         {
             "source": 43,
-            "target": 77
+            "target": 31
         },
         {
-            "source": 51,
-            "target": 52
+            "source": 48,
+            "target": null
         },
         {
-            "source": 51,
+            "source": 48,
             "target": 39
         },
         {
+            "source": 48,
+            "target": null
+        },
+        {
+            "source": 48,
+            "target": 23
+        },
+        {
+            "source": 48,
+            "target": null
+        },
+        {
+            "source": 48,
+            "target": 31
+        },
+        {
+            "source": 48,
+            "target": null
+        },
+        {
+            "source": 48,
+            "target": null
+        },
+        {
+            "source": 48,
+            "target": 31
+        },
+        {
+            "source": 48,
+            "target": null
+        },
+        {
+            "source": 48,
+            "target": 31
+        },
+        {
+            "source": 49,
+            "target": null
+        },
+        {
+            "source": 49,
+            "target": null
+        },
+        {
+            "source": 49,
+            "target": null
+        },
+        {
+            "source": 49,
+            "target": 23
+        },
+        {
+            "source": 49,
+            "target": 47
+        },
+        {
+            "source": 49,
+            "target": 31
+        },
+        {
+            "source": 49,
+            "target": null
+        },
+        {
+            "source": 49,
+            "target": null
+        },
+        {
+            "source": 49,
+            "target": 31
+        },
+        {
+            "source": 49,
+            "target": 31
+        },
+        {
+            "source": 49,
+            "target": 31
+        },
+        {
+            "source": 50,
+            "target": null
+        },
+        {
+            "source": 50,
+            "target": null
+        },
+        {
+            "source": 50,
+            "target": null
+        },
+        {
+            "source": 50,
+            "target": 23
+        },
+        {
+            "source": 50,
+            "target": null
+        },
+        {
+            "source": 50,
+            "target": 31
+        },
+        {
+            "source": 50,
+            "target": null
+        },
+        {
+            "source": 50,
+            "target": null
+        },
+        {
+            "source": 50,
+            "target": 31
+        },
+        {
+            "source": 50,
+            "target": 31
+        },
+        {
+            "source": 50,
+            "target": 31
+        },
+        {
             "source": 51,
-            "target": 53
+            "target": null
+        },
+        {
+            "source": 51,
+            "target": null
+        },
+        {
+            "source": 51,
+            "target": null
         },
         {
             "source": 51,
@@ -636,43 +710,307 @@
         },
         {
             "source": 51,
-            "target": 54
+            "target": null
         },
         {
             "source": 51,
-            "target": 77
+            "target": 31
         },
         {
             "source": 51,
-            "target": 55
+            "target": null
         },
         {
             "source": 51,
-            "target": 56
+            "target": null
         },
         {
             "source": 51,
-            "target": 77
+            "target": 31
         },
         {
             "source": 51,
-            "target": 57
+            "target": 31
         },
         {
             "source": 51,
-            "target": 77
+            "target": 31
+        },
+        {
+            "source": 52,
+            "target": null
+        },
+        {
+            "source": 52,
+            "target": null
+        },
+        {
+            "source": 52,
+            "target": null
+        },
+        {
+            "source": 52,
+            "target": 23
+        },
+        {
+            "source": 52,
+            "target": null
+        },
+        {
+            "source": 52,
+            "target": 31
+        },
+        {
+            "source": 52,
+            "target": null
+        },
+        {
+            "source": 52,
+            "target": null
+        },
+        {
+            "source": 52,
+            "target": 31
+        },
+        {
+            "source": 52,
+            "target": 31
+        },
+        {
+            "source": 52,
+            "target": 31
+        },
+        {
+            "source": 53,
+            "target": null
+        },
+        {
+            "source": 53,
+            "target": null
+        },
+        {
+            "source": 53,
+            "target": null
+        },
+        {
+            "source": 53,
+            "target": 23
+        },
+        {
+            "source": 53,
+            "target": null
+        },
+        {
+            "source": 53,
+            "target": 31
+        },
+        {
+            "source": 53,
+            "target": null
+        },
+        {
+            "source": 53,
+            "target": null
+        },
+        {
+            "source": 53,
+            "target": 31
+        },
+        {
+            "source": 53,
+            "target": 31
+        },
+        {
+            "source": 53,
+            "target": 31
+        },
+        {
+            "source": 54,
+            "target": 31
+        },
+        {
+            "source": 54,
+            "target": 39
+        },
+        {
+            "source": 54,
+            "target": null
+        },
+        {
+            "source": 54,
+            "target": 23
+        },
+        {
+            "source": 54,
+            "target": null
+        },
+        {
+            "source": 54,
+            "target": 31
+        },
+        {
+            "source": 54,
+            "target": null
+        },
+        {
+            "source": 54,
+            "target": null
+        },
+        {
+            "source": 54,
+            "target": 31
+        },
+        {
+            "source": 54,
+            "target": 31
+        },
+        {
+            "source": 54,
+            "target": 31
+        },
+        {
+            "source": 55,
+            "target": null
+        },
+        {
+            "source": 55,
+            "target": null
+        },
+        {
+            "source": 55,
+            "target": null
+        },
+        {
+            "source": 55,
+            "target": 23
+        },
+        {
+            "source": 55,
+            "target": null
+        },
+        {
+            "source": 55,
+            "target": 31
+        },
+        {
+            "source": 55,
+            "target": 41
+        },
+        {
+            "source": 55,
+            "target": null
+        },
+        {
+            "source": 55,
+            "target": 31
+        },
+        {
+            "source": 55,
+            "target": 31
+        },
+        {
+            "source": 55,
+            "target": 31
+        },
+        {
+            "source": 56,
+            "target": null
+        },
+        {
+            "source": 56,
+            "target": null
+        },
+        {
+            "source": 56,
+            "target": null
+        },
+        {
+            "source": 56,
+            "target": 23
+        },
+        {
+            "source": 56,
+            "target": null
+        },
+        {
+            "source": 56,
+            "target": 31
+        },
+        {
+            "source": 56,
+            "target": null
+        },
+        {
+            "source": 56,
+            "target": null
+        },
+        {
+            "source": 56,
+            "target": 31
+        },
+        {
+            "source": 56,
+            "target": 31
+        },
+        {
+            "source": 56,
+            "target": 31
+        },
+        {
+            "source": 57,
+            "target": null
+        },
+        {
+            "source": 57,
+            "target": null
+        },
+        {
+            "source": 57,
+            "target": null
+        },
+        {
+            "source": 57,
+            "target": null
+        },
+        {
+            "source": 57,
+            "target": null
+        },
+        {
+            "source": 57,
+            "target": 31
+        },
+        {
+            "source": 57,
+            "target": null
+        },
+        {
+            "source": 57,
+            "target": null
+        },
+        {
+            "source": 57,
+            "target": 31
+        },
+        {
+            "source": 57,
+            "target": 31
+        },
+        {
+            "source": 57,
+            "target": 31
         },
         {
             "source": 58,
-            "target": 59
+            "target": null
         },
         {
             "source": 58,
-            "target": 60
+            "target": null
         },
         {
             "source": 58,
-            "target": 61
+            "target": null
         },
         {
             "source": 58,
@@ -680,163 +1018,31 @@
         },
         {
             "source": 58,
-            "target": 50
+            "target": null
         },
         {
             "source": 58,
-            "target": 77
+            "target": 31
         },
         {
             "source": 58,
-            "target": 62
+            "target": null
         },
         {
             "source": 58,
-            "target": 56
+            "target": null
         },
         {
             "source": 58,
-            "target": 77
+            "target": 31
         },
         {
             "source": 58,
-            "target": 77
+            "target": 31
         },
         {
             "source": 58,
-            "target": 77
-        },
-        {
-            "source": 63,
-            "target": 64
-        },
-        {
-            "source": 63,
-            "target": 65
-        },
-        {
-            "source": 63,
-            "target": 61
-        },
-        {
-            "source": 63,
-            "target": 23
-        },
-        {
-            "source": 63,
-            "target": 66
-        },
-        {
-            "source": 63,
-            "target": 77
-        },
-        {
-            "source": 63,
-            "target": 67
-        },
-        {
-            "source": 63,
-            "target": 56
-        },
-        {
-            "source": 63,
-            "target": 77
-        },
-        {
-            "source": 63,
-            "target": 77
-        },
-        {
-            "source": 63,
-            "target": 77
-        },
-        {
-            "source": 68,
-            "target": 69
-        },
-        {
-            "source": 68,
-            "target": 70
-        },
-        {
-            "source": 68,
-            "target": 71
-        },
-        {
-            "source": 68,
-            "target": 23
-        },
-        {
-            "source": 68,
-            "target": 72
-        },
-        {
-            "source": 68,
-            "target": 77
-        },
-        {
-            "source": 68,
-            "target": 67
-        },
-        {
-            "source": 68,
-            "target": 56
-        },
-        {
-            "source": 68,
-            "target": 77
-        },
-        {
-            "source": 68,
-            "target": 77
-        },
-        {
-            "source": 68,
-            "target": 77
-        },
-        {
-            "source": 73,
-            "target": 77
-        },
-        {
-            "source": 73,
-            "target": 77
-        },
-        {
-            "source": 73,
-            "target": 77
-        },
-        {
-            "source": 73,
-            "target": 77
-        },
-        {
-            "source": 73,
-            "target": 77
-        },
-        {
-            "source": 73,
-            "target": 77
-        },
-        {
-            "source": 73,
-            "target": 77
-        },
-        {
-            "source": 73,
-            "target": 77
-        },
-        {
-            "source": 73,
-            "target": 77
-        },
-        {
-            "source": 73,
-            "target": 77
-        },
-        {
-            "source": 73,
-            "target": 77
+            "target": 31
         }
     ]
 }
