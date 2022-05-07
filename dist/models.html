@@ -14,22 +14,17 @@
         <link href="css/styles.css" rel="stylesheet" />
         
         <style>
-            div.aSide {
-                height: 1000px;
-                width: 1000px;
-                position: absolute;
-                top: calc(50% - 250px);
-                right: 7%;
+            .myContainer{
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
-
-            /* This styles the 3D object inserted in the aside container */
-            div.aSide model-viewer {
-                height: 1000px;
-                width: 1000px;
-                position: absolute;
-                top: 0;
-                left: 0;
-                border: none;
+            .text{
+                font-size: 20px;
+                paddling-left: 20px;
+            }
+            .model{
+                width: 20%;
             }
         </style>
     </head>
@@ -77,11 +72,13 @@
             
         <!-- This is for holding the 3D object -->
             <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-            <div id="aSide" align="center">
-                <model-viewer src="models/1935.99c.glb" alt="YUAG object 1935.99c" auto-rotate seamless-poster enable-pan camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/1935.99c.glb"></model-viewer>
-            </div>
-            <div id="aSide" align="center">
-                <model-viewer src="models/1935.99d.glb" alt="YUAG object 1935.99d" auto-rotate seamless-poster enable-pan camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/1935.99b.glb"></model-viewer>
+            <div class="myContainer">
+                <div class="text">
+                  <p>this is a test.</p>
+                </div> 
+                 <div class ="model"> 
+                    <model-viewer src="models/1935.99c.glb" alt="YUAG object 1935.99c" auto-rotate seamless-poster enable-pan camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/1935.99c.glb"></model-viewer>
+                </div>
             </div>
         </section>
 
