@@ -54,147 +54,15 @@
     <model-viewer src="test/yuagObj.glb" alt="Yuag Object" auto-rotate seamless-poster enable-pan camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="test/yuagObj.glb"></model-viewer>
     </div>
         
+	    
+
+	<section align="center" class="container px-5">
+		<p>This is where we will put a description of the methodes used to make the website and present the ancient artifacts and data. We explain the methods as well as why we elected to use the methods. - written by the CS students<p>
+	</section>
+
         
 <!-- This is for the data visualization -->
-	    
-	    
-	    <div> This is another test </div>
-        
-	<div>
-        <script type="text/javascript">
-
-			//Load in data
-			d3.json("methodologies/info_sheet.json", function(json) {
-				let dataset = {};
-				console.log(json);
-				// source and target indices start at 1
-				for (let i=0; i < json.edges.length; i++) {
-					json.edges[i].source -=1;
-					json.edges[i].target -=1;
-				}
-
-				dataset.nodes = json.nodes;
-				dataset.edges = json.edges;
-						
-			    	let w = 1000;
-				let h = 700;
-				let padding = 150;
-
-				let force = d3.forceSimulation(dataset.nodes)
-				.force("charge", d3.forceManyBody())
-				.force("link", d3.forceLink(dataset.edges).strength(0.1).distance(100))
-				// this is where the force center is. Try to use this to move the graphic aabove the footer, if it doesnt work remove the footer entirely.
-				.force("center", d3.forceCenter().x(w/2).y(40+h/2))
-				.force("collision", d3.forceCollide(20));
-
-				//Create SVG element
-				let svg = d3.select("body")
-		           	.append("svg")
-		            	.attr("width", w + padding)
-		            	.attr("height", h + padding);
-
-				let edges = svg.selectAll("line")
-				.data(dataset.edges)
-				.enter()
-				.append("line")
-				.style("stroke", "#ccc")
-				.style("stroke-width", 1.5);
-
-				let nodes = svg.selectAll("circle")
-				.data(dataset.nodes)
-				.enter()
-				.append("circle")
-					.attr("r", function(d){
-						//Here is where we would put little icons for the nodes 
-						if(d.color == "gray"){ return 20;} else {return 10;}
-
-					})
-				.style("fill", function(d) {
-				
-					return d.color;
-				})
-				.on("mouseover", function(d) {
-					d3.select("#label").remove();
-
-					svg.append("text")
-			        .attr("id", "label")
-			        .attr("fill", "black")
-					.attr("x", d.x + 15)             
-					.attr("y", d.y)
-					.attr("font-size", "14px") 
-					.attr("font-family", "serif") 
-					.text(d.label + ": " + d.name + "  created link for extra info");
-				})
-				.call(d3.drag()  //Define what to do on drag events
-						.on("start", dragStarted)
-						.on("drag", dragging)
-						.on("end", dragEnded));
-
-
-				force.on("tick", function() {
-				    edges.attr("x1", function(d) { return d.source.x; })
-				         .attr("y1", function(d) { return d.source.y; })
-				         .attr("x2", function(d) { return d.target.x; })
-				         .attr("y2", function(d) { return d.target.y; });
-
-				    nodes.attr("cx", function(d) { return d.x; })
-				         .attr("cy", function(d) { return d.y; });
-
-				});
-
-			//Define drag event functions
-				function dragStarted(d) {
-					if (!d3.event.active) force.alphaTarget(0.3).restart();
-					d.fx = d.x;
-					d.fy = d.y;
-				}
-
-				function dragging(d) {
-					d.fx = d3.event.x;
-					d.fy = d3.event.y;
-				}
-
-				function dragEnded(d) {
-					if (!d3.event.active) force.alphaTarget(0);
-					d.fx = null;
-					d.fy = null;
-				}
-
-
-
-
-				// title
-				svg.append("text")
-				.attr("x", 200)             
-				.attr("y", 30)
-				.attr("font-size", "20px") 
-				.attr("font-family", "sans-serif") 
-				.text("Objects");
-
-				svg.append("text")
-				.attr("x", 300)             
-				.attr("y", 30)
-				.attr("font-size", "16px") 
-				.attr("font-family", "sans-serif") 
-				.text("click to see label");
-
-			
-
-			
-				svg.append("text")
-				.attr("x", 300)             
-				.attr("y", 50)
-				.attr("font-size", "16px") 
-				.attr("font-family", "sans-serif") 
-				.text("small gray nodes are objects, other nodes are properties");
-
-			
-			});
-
-			
-
-        </script>
-	</div>
+	 
 <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
