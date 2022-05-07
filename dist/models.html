@@ -12,7 +12,26 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        
+        <style>
+            div.aSide {
+                height: 600px;
+                width: 600px;
+                position: absolute;
+                top: calc(50% - 250px);
+                right: 7%;
+            }
 
+            /* This styles the 3D object inserted in the aside container */
+            div.aSide model-viewer {
+                height: 600px;
+                width: 600px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: none;
+            }
+        </style>
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -60,8 +79,7 @@
 <!-- This is for holding the 3D object -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <div id="aSide" align="center">
-      <p>This is a test</p>
-    <model-viewer src="models/1935.99c.glb" alt="YUAG object 1935.99c" auto-rotate seamless-poster enable-pan camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="test/yuagObj.glb"></model-viewer>
+        <model-viewer src="models/1935.99c.glb" alt="YUAG object 1935.99c" auto-rotate seamless-poster enable-pan camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="test/yuagObj.glb"></model-viewer>
     </div>
         
         <!-- Footer-->
