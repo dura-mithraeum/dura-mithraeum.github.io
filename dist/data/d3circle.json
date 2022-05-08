@@ -1,0 +1,49 @@
+{
+    "name":"Artifacts",
+    "children": [
+        {
+        "name": "Phase 1", 
+        "children":
+        [
+            {
+                "name": "Phase 1a",
+                "children":[
+                    {
+                        "name":"artifact 1", "value": "image link"
+                    },
+                    {
+                        "name":"artifact 2", "value": "image link"
+                    }
+                ]
+            },
+            {
+                "name": "Phase 1b",
+                "children":[
+                    {
+                        "name":"artifact 3", "value": "image link"
+                    },
+                    {
+                        "name":"artifact 4", "value": "image link"
+                    }
+                ]
+            }
+        ]
+        },
+        {
+            "name": "Phase 2", 
+            "children":
+            [
+                {
+                    "name": "Phase 2a"
+                },
+                {
+                    "name": "Phase 2b"
+                }
+            ]
+            }
+        
+
+    ]
+
+    
+    }
