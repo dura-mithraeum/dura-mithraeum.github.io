@@ -226,6 +226,46 @@
       .text(d => d.data.name);
 
   zoomTo([root.x, root.y, root.r * 2]);
+<script type="text/javascript">
+
+  //data = FileAttachment("d3circle.json").json()
+  d3.json("d3circle.json", function(json) {
+    console.log(json)
+  })
+  const root = pack(data);
+  let focus = root;
+  let view;
+
+  const svg = d3.create("svg")
+      .attr("viewBox", `-${width / 2} -${height / 2} ${width} ${height}`)
+      .style("display", "block")
+      .style("margin", "0 -14px")
+      .style("background", color(0))
+      .style("cursor", "pointer")
+      .on("click", (event) => zoom(event, root));
+
+  const node = svg.append("g")
+    .selectAll("circle")
+    .data(root.descendants().slice(1))
+    .join("circle")
+      .attr("fill", d => d.children ? color(d.depth) : "white")
+      .attr("pointer-events", d => !d.children ? "none" : null)
+      .on("mouseover", function() { d3.select(this).attr("stroke", "#000"); })
+      .on("mouseout", function() { d3.select(this).attr("stroke", null); })
+      .on("click", (event, d) => focus !== d && (zoom(event, d), event.stopPropagation()));
+
+  const label = svg.append("g")
+      .style("font", "10px sans-serif")
+      .attr("pointer-events", "none")
+      .attr("text-anchor", "middle")
+    .selectAll("text")
+    .data(root.descendants())
+    .join("text")
+      .style("fill-opacity", d => d.parent === root ? 1 : 0)
+      .style("display", d => d.parent === root ? "inline" : "none")
+      .text(d => d.data.name);
+
+  zoomTo([root.x, root.y, root.r * 2]);
 
   function zoomTo(v) {
     const k = width / v[2];
@@ -259,7 +299,7 @@
 
   return svg.node();
       }
-	</script>
+</script>
 	</div>
 <!-- Footer - deleted-->
        
