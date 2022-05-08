@@ -70,18 +70,30 @@
         </header>
     
         <section class="bg-light py-5 border-bottom">
+            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
-                    <h2 class="fw-bolder">About</h2>
-                    <p class="lead mb-0">This project seeks to create a virtual model of the Mithraeum of Dura-Europos on a website that can serve as both an educational tool and a research database.</p>
+                    <h2 class="fw-bolder">Interpretations and Construction</h2>
+                    <p class="lead mb-0">The images used to model and annotate this project were primarily based off of objects currently stored at the Yale University Art Gallery, excavated by the Yale-French Excavations at Dura Europos.</p>
                 </div>
                 <div class="text-left" mb-5">
-                    <p> "Current representations available online of the Mithraeum are mostly in 2D, and many images of the Mithraeum do not seem to provide full context of the room, specifically in regards to what it might have looked like in different stages of excavation and construction. Our model aims to show different stages of excavation as well as different stages of construction with annotations about current research progress (e.g., pictures, transcriptions, modeling, and dating, etc.)."</p>
+                    <p> Led in large part by Henry Pearson, found the shrine of this mithraeum almost entirely intact. Pearson’s three stages of construction of the Mithraeum were called the Early Mithraeum (EM), Middle Mithraeum (MM), and Late Mithraeum (LM). What is on display at the Yale University Art Gallery is a part of the Late Mithraeum known as the shrine. As mentioned, this three stage interpretation comes from—and has been subsequently published and canonized—Henry Pearson and Mikhail Rostotzeff, with the three stages loosely defined here:</p>
+                        <p><b>Early Mithraeum:</b> this stage of construction centered around the shrine, which was at the time housed in a private home, instead of a building built for worship. Made up of a single room, the space opens off of a courtyard, with benches on either side of it. Importantly, Pearson’s interpretation asserts that there is no significant decoration such as the plaster paintings traditional to the Mithraeum in place during the EM.</p>
+                        <p><b>Middle Mithraeum:</b> this stage included an expansion of the EM into its own building, with a new entrance, space of worship (specifically the benches) expanded from the original room. Notably, an arch framing the cult image and elaborate paintings decorated the walls of the Middle Mithraeum.</p>
+                        <p><b>Late Mithraeum:</b> this stage primarily included an expansion of the functional elements erected during the MM, including an earlier staircase, altars, and an expansion of the ceiling. These new constructions partially covered some of the painting from the MM, and some reliefs were re-set because of this. There is also evidence of an overall new decorative program assigned to this stage.</p>
+                    <p>On the other hand, Dirvin and McCarthy propose thinking of the phases in the phases of Mithraeum I (loosely EM and MM) and Mithraeum II (LM), with a shifted timeline that does not exactly follow the years that Pearson ascribed to the different stages. They argue for a re-interpretation that evaluates a more complex and less delineated history of the Mithraeum, and one that accounts for the impact that earlier versions and decorative programs of the building might have had on later constructions. This type of delineation, as formerly mentioned, does not allow for a cross-temporal analysis of the decoration and fragments excavated from the Mithraeum that Dirvin and McCarthy suggests. This project then aims to visualize objects from the Mithraeum and its shrine categorized by stage in order to see how the shrine and building evolved in Dura Europos. However, both Pearson’s and Dirvin and McCarthy’s interpretations are taken into account in our project, as we acknowledge both the EM, MM, and EM, as well as Mithraeum I and II in order to give a full picture of both interpretations.</p>                   
                 </div>
+               <div class="text-center mb-5">
+                    <p class="lead mb-0">3-dimensional model of the mithraeum on view at the Yale University Art Gallery (a reconstruction of the Late Mithraeum)</p>        
+                </div>    
+             <div class="container px-5 my-5">
+              <div class="model"> 
+                    <model-viewer src="models/1935.99c.glb" alt="YUAG object 1935.99c" seamless-poster enable-pan camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/1935.99c.glb"></model-viewer>
+               </div>    
             </div>
+          </div>
             
         <!-- This is for holding the 3D object -->
-            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             <div class="container px-5 my-5">
                <div style="float: right" width="300" height="300"> 
                     <model-viewer src="models/1935.99b.glb" alt="YUAG object 1935.99b" seamless-poster enable-pan camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/1935.99b.glb"></model-viewer>
