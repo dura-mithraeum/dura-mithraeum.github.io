@@ -1,211 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title> Data </title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/DHicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <!-- For the D3 model -->
-        <meta charset="utf-8">
-        <script type="text/javascript" src="methodologies/d3.js"></script>
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container px-5">
-                <a class="navbar-brand" href="#!">The Dura Europos Mithraeum</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="methodologies.html">Methodologies</a></li>
-                        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="data.html">Data</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-<!-- header --> 
-	    <header class="bg-dark py-5">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="text-center my-4">
-                            <h1 class="display-5 fw-bolder text-white mb-2">Data from the Site</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-	<div align="center" id="image_display">
-		<p font-size=25pt>Hover over a red item node to see a picture of it.<p>
-		<img src="photos/head.jpg" width=35%>
-	</div>
-		
-	    
-   
-<!-- This is for the data visualization -->
-   
-	<div>
-        <script type="text/javascript">
+<script type="text/javascript">
 
-			//Load in data
-			d3.json("data/info_sheet.json", function(json) {
-				let dataset = {};
-				console.log(json);
-				// source and target indices start at 1
-				for (let i=0; i < json.edges.length; i++) {
-					json.edges[i].source -=1;
-					json.edges[i].target -=1;
-				}
+    //Load in data
+    d3.json("methodologies/info_sheet.json", function(json) {
+        let dataset = {};
+        console.log(json);
+        // source and target indices start at 1
+        for (let i=0; i < json.edges.length; i++) {
+            json.edges[i].source -=1;
+            json.edges[i].target -=1;
+        }
 
-				dataset.nodes = json.nodes;
-				dataset.edges = json.edges;
-						
-			    	let w = 1000;
-				let h = 700;
-				let padding = 150;
+        dataset.nodes = json.nodes;
+        dataset.edges = json.edges;
+                
+            let w = 1000;
+        let h = 700;
+        let padding = 150;
 
-				let force = d3.forceSimulation(dataset.nodes)
-				.force("charge", d3.forceManyBody())
-				.force("link", d3.forceLink(dataset.edges).strength(0.1).distance(100))
-				// this is where the force center is. Try to use this to move the graphic aabove the footer, if it doesnt work remove the footer entirely.
-				.force("center", d3.forceCenter().x(w/2).y(40+h/2))
-				.force("collision", d3.forceCollide(20));
+        let force = d3.forceSimulation(dataset.nodes)
+        .force("charge", d3.forceManyBody())
+        .force("link", d3.forceLink(dataset.edges).strength(0.1).distance(100))
+        .force("center", d3.forceCenter().x(w/2).y(40+h/2))
+        .force("collision", d3.forceCollide(20));
 
-				//Create SVG element
-				let svg = d3.select("body")
-		           	.append("svg")
-		            	.attr("width", w + padding)
-		            	.attr("height", h + padding);
+        //Create SVG element
+        let svg = d3.select("body")
+               .append("svg")
+                .attr("width", w + padding)
+                .attr("height", h + padding);
 
-				let edges = svg.selectAll("line")
-				.data(dataset.edges)
-				.enter()
-				.append("line")
-				.style("stroke", "#ccc")
-				.style("stroke-width", 1.5);
+        let edges = svg.selectAll("line")
+        .data(dataset.edges)
+        .enter()
+        .append("line")
+        .style("stroke", "#ccc")
+        .style("stroke-width", 1.5);
 
-				let nodes = svg.selectAll("circle")
-				.data(dataset.nodes)
-				.enter()
-				.append("circle")
-					.attr("r", function(d){
-						//Here is where we would put little icons for the nodes 
-						if(d.color == "gray"){ return 20;} else {return 10;}
+        let nodes = svg.selectAll("circle")
+        .data(dataset.nodes)
+        .enter()
+        .append("circle")
+            .attr("r", function(d){
+                if(d.color == "gray"){ return 20;} else {return 10;}
 
-					})
-				.style("fill", function(d) {
-				
-					return d.color;
-				})
-				.on("mouseover", function(d) {
-					//display picture of object on mouse hover
-					//document.getElementById(image_display).innerHTML = "<img src=photos/" + d.image_link + " width=35%>"
-					d3.select("#label").remove();
+            })
+        .style("fill", function(d) {
+        
+            return d.color;
+        })
+        .on("mouseover", function(d) {
+            d3.select("#label").remove();
 
-					svg.append("text")
-			        .attr("id", "label")
-			        .attr("fill", "black")
-					.attr("x", d.x + 15)             
-					.attr("y", d.y)
-					.attr("font-size", "14px") 
-					.attr("font-family", "serif") 
-					.text(d.name);
-				})
-				
-				.on("mouseover", function(d){
-					document.getElementById(image_display).innerHTML = "<img src=photos/" + d.image_link + " width=35%>"
-				
-				})
-	
-				.call(d3.drag()  //Define what to do on drag events
-						.on("start", dragStarted)
-						.on("drag", dragging)
-						.on("end", dragEnded));
+            svg.append("text")
+            .attr("id", "label")
+            .attr("fill", "black")
+            .attr("x", d.x + 15)             
+            .attr("y", d.y)
+            .attr("font-size", "14px") 
+            .attr("font-family", "serif") 
+            .text(d.label + ": " + d.name + "  created link for extra info");
+        })
+        .call(d3.drag()  //Define what to do on drag events
+                .on("start", dragStarted)
+                .on("drag", dragging)
+                .on("end", dragEnded));
 
 
-				force.on("tick", function() {
-				    edges.attr("x1", function(d) { return d.source.x; })
-				         .attr("y1", function(d) { return d.source.y; })
-				         .attr("x2", function(d) { return d.target.x; })
-				         .attr("y2", function(d) { return d.target.y; });
+        force.on("tick", function() {
+            edges.attr("x1", function(d) { return d.source.x; })
+                 .attr("y1", function(d) { return d.source.y; })
+                 .attr("x2", function(d) { return d.target.x; })
+                 .attr("y2", function(d) { return d.target.y; });
 
-				    nodes.attr("cx", function(d) { return d.x; })
-				         .attr("cy", function(d) { return d.y; });
+            nodes.attr("cx", function(d) { return d.x; })
+                 .attr("cy", function(d) { return d.y; });
 
-				});
+        });
 
-			//Define drag event functions
-				function dragStarted(d) {
-					if (!d3.event.active) force.alphaTarget(0.3).restart();
-					d.fx = d.x;
-					d.fy = d.y;
-				}
+    //Define drag event functions
+        function dragStarted(d) {
+            if (!d3.event.active) force.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
 
-				function dragging(d) {
-					d.fx = d3.event.x;
-					d.fy = d3.event.y;
-				}
+        function dragging(d) {
+            d.fx = d3.event.x;
+            d.fy = d3.event.y;
+        }
 
-				function dragEnded(d) {
-					if (!d3.event.active) force.alphaTarget(0);
-					d.fx = null;
-					d.fy = null;
-				}
+        function dragEnded(d) {
+            if (!d3.event.active) force.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
 
 
-				// title
-				svg.append("text")
-				.attr("x", 200)             
-				.attr("y", 30)
-				.attr("font-size", "20px") 
-				.attr("font-family", "sans-serif") 
-				.text("Objects");
 
-				svg.append("text")
-				.attr("x", 300)             
-				.attr("y", 30)
-				.attr("font-size", "16px") 
-				.attr("font-family", "sans-serif") 
-				.text("click to see label");
 
-			
+        // title
+        svg.append("text")
+        .attr("x", 200)             
+        .attr("y", 30)
+        .attr("font-size", "20px") 
+        .attr("font-family", "sans-serif") 
+        .text("Objects");
 
-			
-				svg.append("text")
-				.attr("x", 300)             
-				.attr("y", 50)
-				.attr("font-size", "16px") 
-				.attr("font-family", "sans-serif") 
-				.text("small gray nodes are objects, other nodes are properties");
+        svg.append("text")
+        .attr("x", 300)             
+        .attr("y", 30)
+        .attr("font-size", "16px") 
+        .attr("font-family", "sans-serif") 
+        .text("click to see label");
 
-			
-			});
+    
 
-			
+    
+        svg.append("text")
+        .attr("x", 300)             
+        .attr("y", 50)
+        .attr("font-size", "16px") 
+        .attr("font-family", "sans-serif") 
+        .text("small gray nodes are objects, other nodes are properties");
 
-        </script>
-		
-<!-- Footer - deleted-->
-       
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
-</html>
+    
+    });
+
+    
+
+</script>
