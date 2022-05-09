@@ -123,7 +123,10 @@
 					.text(d.name);
 				})
 				
-				.on("mouseover", function(displayImage(d))
+				.on("mouseover", function(d){
+					document.getElementById(image_display).innerHTML = "<img src=photos/" + d.image_link + " width=35%>"
+				
+				})
 	
 				.call(d3.drag()  //Define what to do on drag events
 						.on("start", dragStarted)
@@ -159,12 +162,6 @@
 					d.fx = null;
 					d.fy = null;
 				}
-				function displayImage(d){
-					document.getElementById(image_display).innerHTML = "<img src=photos/" + d.image_link + " width=35%>"
-					
-				}
-
-
 
 
 				// title
