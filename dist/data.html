@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,13 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Business Frontpage - Start Bootstrap Template</title>
+        <title> Data </title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/DHicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- For the D3 model -->
+        <meta charset="utf-8">
+        <script type="text/javascript" src="methodologies/d3.js"></script>
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -24,22 +25,40 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="about/about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Methodologies</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Excavate</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Model</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="methodologies.html">Methodologies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="data.html">Data</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-
+<!-- header --> 
+	    <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-4">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Data from the Site</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+	<div align="center" id="image_display">
+		<p font-size=25pt>Hover over a red item node to see a picture of it.<p>
+		<img src="photos/head.jpg" width=35%>
+	</div>
+		
+	    
+   
 
 
 <script type="text/javascript">
 
     //Load in data
-    d3.json("data/info_sheet.json", function(json) {
+    d3.json("methodologies/info_sheet.json", function(json) {
         let dataset = {};
         console.log(json);
         // source and target indices start at 1
@@ -79,6 +98,7 @@
         .enter()
         .append("circle")
             .attr("r", function(d){
+                <!-- Here is where we would put little icons for the nodes -->
                 if(d.color == "gray"){ return 20;} else {return 10;}
 
             })
@@ -96,7 +116,7 @@
             .attr("y", d.y)
             .attr("font-size", "14px") 
             .attr("font-family", "serif") 
-            .text(d.label + ": " + d.name + "  created link for extra info");
+            .text(d.label + "test");
         })
         .call(d3.drag()  //Define what to do on drag events
                 .on("start", dragStarted)
