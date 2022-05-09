@@ -111,7 +111,6 @@
 					//display picture of object on mouse hover
 					//document.getElementById(image_display).innerHTML = "<img src=photos/" + d.image_link + " width=35%>"
 					d3.select("#label").remove();
-					call(displayImage(d))
 
 					svg.append("text")
 			        .attr("id", "label")
@@ -122,6 +121,8 @@
 					.attr("font-family", "serif") 
 					.text(d.name);
 				})
+				
+				.on ("mouseover", function(displayImage(d))
 	
 				.call(d3.drag()  //Define what to do on drag events
 						.on("start", dragStarted)
@@ -158,7 +159,6 @@
 					d.fy = null;
 				}
 				function displayImage(d){
-					if (!d3.event.active);
 					document.getElementById(image_display).innerHTML = "<img src=photos/" + d.image_link + " width=35%>"
 					
 				}
