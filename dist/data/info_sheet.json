@@ -4,181 +4,181 @@
             "label": "1",
             "name": "Cult Relief of Mithras Slaying the Bull (Tauroctony) Larger",
             "color": "red",
-            "image link": "cult_relief_large.jpg"
+            "image_link": "cult_relief_large.jpg"
         },
         {
             "label": "1",
             "name": "Limestone",
             "color": "green",
-            "image link": "cult_relief_large.jpg"
+            "image_link": "cult_relief_large.jpg"
         },
         {
             "label": "1",
             "name": "1 and 2",
             "color": "violet",
-            "image link": "cult_relief_large.jpg"
+            "image_link": "cult_relief_large.jpg"
         },
         {
             "label": "2",
             "name": "Cult Relief of Mithras Slaying the Bull (Tauroctony) Smaller",
             "color": "red",
-            "image link": "cult_relief_small.jpg"
+            "image_link": "cult_relief_small.jpg"
         },
         {
             "label": "2",
             "name": "info",
             "color": "violet",
-            "image link": "cult_relief_small.jpg"
+            "image_link": "cult_relief_small.jpg"
         },
         {
             "label": "3",
             "name": "pictures of the twelve signs of the zodic",
             "color": "red",
-            "image link": "zodiac.jpg"
+            "image_link": "zodiac.jpg"
         },
         {
             "label": "3",
             "name": "Paint on plaster",
             "color": "green",
-            "image link": "zodiac.jpg"
+            "image_link": "zodiac.jpg"
         },
         {
             "label": "3",
             "name": "2",
             "color": "violet",
-            "image link": "zodiac.jpg"
+            "image_link": "zodiac.jpg"
         },
         {
             "label": "4",
             "name": "Altar",
             "color": "red",
-            "image link": "alter.jpg"
+            "image_link": "alter.jpg"
         },
         {
             "label": "5",
             "name": "A Latin inscription",
             "color": "red",
-            "image link": "latin.jpg"
+            "image_link": "latin.jpg"
         },
         {
             "label": "6",
             "name": "A large tauroctony",
             "color": "red",
-            "image link": "tauroctony.jpg"
+            "image_link": "tauroctony.jpg"
         },
         {
             "label": "6",
             "name": "1",
             "color": "violet",
-            "image link": "tauroctony.jpg"
+            "image_link": "tauroctony.jpg"
         },
         {
             "label": "7",
             "name": "Two fragmentary clean-shaven portraits",
             "color": "red",
-            "image link": "portraits.jpg"
+            "image_link": "portraits.jpg"
         },
         {
             "label": "7",
             "name": "1A",
             "color": "violet",
-            "image link": "portraits.jpg"
+            "image_link": "portraits.jpg"
         },
         {
             "label": "8",
             "name": "The banquet of Mithras and Sol",
             "color": "red",
-            "image link": "banquet.jpg"
+            "image_link": "banquet.jpg"
         },
         {
             "label": "8",
             "name": "1B",
             "color": "violet",
-            "image link": "banquet.jpg"
+            "image_link": "banquet.jpg"
         },
         {
             "label": "9",
             "name": "Another head of Sol",
             "color": "red",
-            "image link": "head.jpg"
+            "image_link": "head.jpg"
         },
         {
             "label": "10",
             "name": "Two beardless figures with Phrygian caps",
             "color": "red",
-            "image link": "beardless_figure.jpg"
+            "image_link": "beardless_figure.jpg"
         },
         {
             "label": "11",
             "name": "A fragment of a bull's head",
             "color": "red",
-            "image link": "bulls_head.jpg"
+            "image_link": "bulls_head.jpg"
         },
         {
             "label": "12",
             "name": "A crouching figure wearing tunic and trousers, above which are the feet of two other figures.",
             "color": "red",
-            "image link": "crouching_figure.jpg"
+            "image_link": "crouching_figure.jpg"
         },
         {
             "label": "13",
             "name": "Faint remains of five signs of the zodiac.",
             "color": "red",
-            "image link": "faint_remains.jpg"
+            "image_link": "faint_remains.jpg"
         },
         {
             "label": "14",
             "name": "Several painted stucco fragments",
             "color": "red",
-            "image link": "painted_stucco.jpg"
+            "image_link": "painted_stucco.jpg"
         },
         {
             "label": "15",
             "name": "Fragments of the portraits of Mithraic initiates: Head of Donor with Head at Right: Archelaus ",
             "color": "red",
-            "image link": "portrait_fragment.jpg"
+            "image_link": "portrait_fragment.jpg"
         },
         {
             "label": "15",
             "name": "various phases",
             "color": "violet",
-            "image link": "portrait_fragment.jpg"
+            "image_link": "portrait_fragment.jpg"
         },
         {
             "label": "16",
             "name": " the cult furniture - two benches, the two easternmost columns, the raised podium, and the round engaged altar. ",
             "color": "red",
-            "image link": "benches"
+            "image_link": "benches"
         },
         {
             "label": "16",
             "name": "/",
             "color": "green",
-            "image link": "benches"
+            "image_link": "benches"
         },
         {
             "label": "17",
             "name": "a large fragment with Parthian clothing",
             "color": "red",
-            "image link": "parthian_clothing.jpg"
+            "image_link": "parthian_clothing.jpg"
         },
         {
             "label": "18",
             "name": "a reclining figure whose head was projecting into the border of the panel",
             "color": "red",
-            "image link": "reclining_figure.jpg"
+            "image_link": "reclining_figure.jpg"
         },
         {
             "label": "19",
             "name": "the upper part of the body of a figure in Parthian dress, turned to the left",
             "color": "red",
-            "image link": "upper_body.jpg"
+            "image_link": "upper_body.jpg"
         },
         {
             "label": "20",
             "name": "",
             "color": "red",
-            "image link": "final_phase.jpg"
+            "image_link": "final_phase.jpg"
         }
     ],
     "edges": [
