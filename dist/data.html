@@ -46,6 +46,10 @@
                 </div>
             </div>
         </header>
+	<div align="center" id="image_display">
+		
+	</div>
+		
 	    
    
 <!-- This is for the data visualization -->
@@ -104,6 +108,8 @@
 					return d.color;
 				})
 				.on("mouseover", function(d) {
+					//display picture of object on mouse hover
+					document.getElementById(image_display).innerHTML = "<img src=" + d.image_link + " width=35%>"
 					d3.select("#label").remove();
 
 					svg.append("text")
@@ -113,7 +119,7 @@
 					.attr("y", d.y)
 					.attr("font-size", "14px") 
 					.attr("font-family", "serif") 
-					.text(d.label + ": " + d.name + "  created link for extra info");
+					.text(d.name + );
 				})
 				.call(d3.drag()  //Define what to do on drag events
 						.on("start", dragStarted)
