@@ -109,7 +109,7 @@
 				})
 				.on("mouseover", function(d) {
 					//display picture of object on mouse hover
-					document.getElementById(image_display).innerHTML = "<img src=photos/" + d.image_link + " width=35%>"
+					//document.getElementById(image_display).innerHTML = "<img src=photos/" + d.image_link + " width=35%>"
 					d3.select("#label").remove();
 
 					svg.append("text")
@@ -154,6 +154,11 @@
 					if (!d3.event.active) force.alphaTarget(0);
 					d.fx = null;
 					d.fy = null;
+				}
+				function displayImage(d){
+					if (!d3.event.active);
+					document.getElementById(image_display).innerHTML = "<img src=photos/" + d.image_link + " width=35%>"
+					
 				}
 
 
