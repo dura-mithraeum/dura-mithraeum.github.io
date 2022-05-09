@@ -152,7 +152,7 @@
         },
         {
             "label": "16",
-            "name": "/",
+            "name": "limestone",
             "color": "green",
             "image_link": "benches"
         },
@@ -176,7 +176,7 @@
         },
         {
             "label": "20",
-            "name": "",
+            "name": "Possibly one of the scenes from the life of Mithras; scale of this approximately equal to that of similar scenes from the Late Mithraeum (cf. dadophores carrying slain bull).",
             "color": "red",
             "image_link": "final_phase.jpg"
         }
@@ -195,26 +195,6 @@
             "target": 3
         },
         {
-            "source": 3,
-            "target": 30
-        },
-        {
-            "source": 3,
-            "target": 30
-        },
-        {
-            "source": 3,
-            "target": 30
-        },
-        {
-            "source": 3,
-            "target": 30
-        },
-        {
-            "source": 3,
-            "target": 30
-        },
-        {
             "source": 5,
             "target": 4
         },
@@ -227,26 +207,6 @@
             "target": 5
         },
         {
-            "source": 5,
-            "target": 30
-        },
-        {
-            "source": 5,
-            "target": 30
-        },
-        {
-            "source": 5,
-            "target": 30
-        },
-        {
-            "source": 5,
-            "target": 30
-        },
-        {
-            "source": 5,
-            "target": 30
-        },
-        {
             "source": 8,
             "target": 6
         },
@@ -256,35 +216,7 @@
         },
         {
             "source": 8,
-            "target": 30
-        },
-        {
-            "source": 8,
-            "target": 30
-        },
-        {
-            "source": 8,
             "target": 8
-        },
-        {
-            "source": 8,
-            "target": 30
-        },
-        {
-            "source": 8,
-            "target": 30
-        },
-        {
-            "source": 8,
-            "target": 30
-        },
-        {
-            "source": 8,
-            "target": 30
-        },
-        {
-            "source": 8,
-            "target": 30
         },
         {
             "source": 9,
@@ -296,39 +228,7 @@
         },
         {
             "source": 9,
-            "target": 30
-        },
-        {
-            "source": 9,
-            "target": 30
-        },
-        {
-            "source": 9,
             "target": 3
-        },
-        {
-            "source": 9,
-            "target": 30
-        },
-        {
-            "source": 9,
-            "target": 30
-        },
-        {
-            "source": 9,
-            "target": 30
-        },
-        {
-            "source": 9,
-            "target": 30
-        },
-        {
-            "source": 9,
-            "target": 30
-        },
-        {
-            "source": 9,
-            "target": 30
         },
         {
             "source": 10,
@@ -340,39 +240,7 @@
         },
         {
             "source": 10,
-            "target": 30
-        },
-        {
-            "source": 10,
-            "target": 30
-        },
-        {
-            "source": 10,
             "target": 8
-        },
-        {
-            "source": 10,
-            "target": 30
-        },
-        {
-            "source": 10,
-            "target": 30
-        },
-        {
-            "source": 10,
-            "target": 30
-        },
-        {
-            "source": 10,
-            "target": 30
-        },
-        {
-            "source": 10,
-            "target": 30
-        },
-        {
-            "source": 10,
-            "target": 30
         },
         {
             "source": 12,
@@ -384,39 +252,7 @@
         },
         {
             "source": 12,
-            "target": 30
-        },
-        {
-            "source": 12,
-            "target": 30
-        },
-        {
-            "source": 12,
             "target": 12
-        },
-        {
-            "source": 12,
-            "target": 30
-        },
-        {
-            "source": 12,
-            "target": 30
-        },
-        {
-            "source": 12,
-            "target": 30
-        },
-        {
-            "source": 12,
-            "target": 30
-        },
-        {
-            "source": 12,
-            "target": 30
-        },
-        {
-            "source": 12,
-            "target": 30
         },
         {
             "source": 14,
@@ -428,35 +264,7 @@
         },
         {
             "source": 14,
-            "target": 30
-        },
-        {
-            "source": 14,
-            "target": 30
-        },
-        {
-            "source": 14,
             "target": 14
-        },
-        {
-            "source": 14,
-            "target": 30
-        },
-        {
-            "source": 14,
-            "target": 30
-        },
-        {
-            "source": 14,
-            "target": 30
-        },
-        {
-            "source": 14,
-            "target": 30
-        },
-        {
-            "source": 14,
-            "target": 30
         },
         {
             "source": 16,
@@ -468,31 +276,7 @@
         },
         {
             "source": 16,
-            "target": 30
-        },
-        {
-            "source": 16,
             "target": 16
-        },
-        {
-            "source": 16,
-            "target": 30
-        },
-        {
-            "source": 16,
-            "target": 30
-        },
-        {
-            "source": 16,
-            "target": 30
-        },
-        {
-            "source": 16,
-            "target": 30
-        },
-        {
-            "source": 16,
-            "target": 30
         },
         {
             "source": 17,
@@ -504,35 +288,7 @@
         },
         {
             "source": 17,
-            "target": 30
-        },
-        {
-            "source": 17,
             "target": 16
-        },
-        {
-            "source": 17,
-            "target": 30
-        },
-        {
-            "source": 17,
-            "target": 30
-        },
-        {
-            "source": 17,
-            "target": 30
-        },
-        {
-            "source": 17,
-            "target": 30
-        },
-        {
-            "source": 17,
-            "target": 30
-        },
-        {
-            "source": 17,
-            "target": 30
         },
         {
             "source": 18,
@@ -544,35 +300,7 @@
         },
         {
             "source": 18,
-            "target": 30
-        },
-        {
-            "source": 18,
             "target": 16
-        },
-        {
-            "source": 18,
-            "target": 30
-        },
-        {
-            "source": 18,
-            "target": 30
-        },
-        {
-            "source": 18,
-            "target": 30
-        },
-        {
-            "source": 18,
-            "target": 30
-        },
-        {
-            "source": 18,
-            "target": 30
-        },
-        {
-            "source": 18,
-            "target": 30
         },
         {
             "source": 19,
@@ -584,35 +312,7 @@
         },
         {
             "source": 19,
-            "target": 30
-        },
-        {
-            "source": 19,
             "target": 16
-        },
-        {
-            "source": 19,
-            "target": 30
-        },
-        {
-            "source": 19,
-            "target": 30
-        },
-        {
-            "source": 19,
-            "target": 30
-        },
-        {
-            "source": 19,
-            "target": 30
-        },
-        {
-            "source": 19,
-            "target": 30
-        },
-        {
-            "source": 19,
-            "target": 30
         },
         {
             "source": 20,
@@ -628,35 +328,7 @@
         },
         {
             "source": 20,
-            "target": 30
-        },
-        {
-            "source": 20,
             "target": 16
-        },
-        {
-            "source": 20,
-            "target": 30
-        },
-        {
-            "source": 20,
-            "target": 30
-        },
-        {
-            "source": 20,
-            "target": 30
-        },
-        {
-            "source": 20,
-            "target": 30
-        },
-        {
-            "source": 20,
-            "target": 30
-        },
-        {
-            "source": 20,
-            "target": 30
         },
         {
             "source": 21,
@@ -668,31 +340,7 @@
         },
         {
             "source": 21,
-            "target": 30
-        },
-        {
-            "source": 21,
             "target": 16
-        },
-        {
-            "source": 21,
-            "target": 30
-        },
-        {
-            "source": 21,
-            "target": 30
-        },
-        {
-            "source": 21,
-            "target": 30
-        },
-        {
-            "source": 21,
-            "target": 30
-        },
-        {
-            "source": 21,
-            "target": 30
         },
         {
             "source": 22,
@@ -704,31 +352,7 @@
         },
         {
             "source": 22,
-            "target": 30
-        },
-        {
-            "source": 22,
             "target": 16
-        },
-        {
-            "source": 22,
-            "target": 30
-        },
-        {
-            "source": 22,
-            "target": 30
-        },
-        {
-            "source": 22,
-            "target": 30
-        },
-        {
-            "source": 22,
-            "target": 30
-        },
-        {
-            "source": 22,
-            "target": 30
         },
         {
             "source": 24,
@@ -743,30 +367,6 @@
             "target": 24
         },
         {
-            "source": 24,
-            "target": 30
-        },
-        {
-            "source": 24,
-            "target": 30
-        },
-        {
-            "source": 24,
-            "target": 30
-        },
-        {
-            "source": 24,
-            "target": 30
-        },
-        {
-            "source": 24,
-            "target": 30
-        },
-        {
-            "source": 24,
-            "target": 30
-        },
-        {
             "source": 26,
             "target": 25
         },
@@ -776,39 +376,7 @@
         },
         {
             "source": 26,
-            "target": 26
-        },
-        {
-            "source": 26,
-            "target": 30
-        },
-        {
-            "source": 26,
             "target": 12
-        },
-        {
-            "source": 26,
-            "target": 30
-        },
-        {
-            "source": 26,
-            "target": 30
-        },
-        {
-            "source": 26,
-            "target": 30
-        },
-        {
-            "source": 26,
-            "target": 30
-        },
-        {
-            "source": 26,
-            "target": 30
-        },
-        {
-            "source": 26,
-            "target": 30
         },
         {
             "source": 27,
@@ -820,31 +388,7 @@
         },
         {
             "source": 27,
-            "target": 30
-        },
-        {
-            "source": 27,
             "target": 16
-        },
-        {
-            "source": 27,
-            "target": 30
-        },
-        {
-            "source": 27,
-            "target": 30
-        },
-        {
-            "source": 27,
-            "target": 30
-        },
-        {
-            "source": 27,
-            "target": 30
-        },
-        {
-            "source": 27,
-            "target": 30
         },
         {
             "source": 28,
@@ -856,31 +400,7 @@
         },
         {
             "source": 28,
-            "target": 30
-        },
-        {
-            "source": 28,
             "target": 16
-        },
-        {
-            "source": 28,
-            "target": 30
-        },
-        {
-            "source": 28,
-            "target": 30
-        },
-        {
-            "source": 28,
-            "target": 30
-        },
-        {
-            "source": 28,
-            "target": 30
-        },
-        {
-            "source": 28,
-            "target": 30
         },
         {
             "source": 29,
@@ -892,31 +412,7 @@
         },
         {
             "source": 29,
-            "target": 30
-        },
-        {
-            "source": 29,
             "target": 16
-        },
-        {
-            "source": 29,
-            "target": 30
-        },
-        {
-            "source": 29,
-            "target": 30
-        },
-        {
-            "source": 29,
-            "target": 30
-        },
-        {
-            "source": 29,
-            "target": 30
-        },
-        {
-            "source": 29,
-            "target": 30
         },
         {
             "source": 30,
@@ -928,31 +424,7 @@
         },
         {
             "source": 30,
-            "target": 30
-        },
-        {
-            "source": 30,
             "target": 16
-        },
-        {
-            "source": 30,
-            "target": 30
-        },
-        {
-            "source": 30,
-            "target": 30
-        },
-        {
-            "source": 30,
-            "target": 30
-        },
-        {
-            "source": 30,
-            "target": 30
-        },
-        {
-            "source": 30,
-            "target": 30
         }
     ]
 }
