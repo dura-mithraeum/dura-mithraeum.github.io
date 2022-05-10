@@ -46,11 +46,21 @@
                 </div>
             </div>
         </header>
-	<div align="center" id="image_display">
+
+	<div align="center" id="image_display" style="
+						      {
+    width: 120px;
+    height: 120px;
+    height: auto;
+    float: center;
+    margin: 3px;
+    padding: 3px;
+}
+						      >
 		<p font-size=25pt>Hover over a red item node to see a picture of it.<p>
 		<img src="photos/head.jpg" width=35%>
 	</div>
-		
+
 	    
    
 <!-- This is for the data visualization -->
@@ -119,7 +129,7 @@
 					.attr("y", d.y)
 					.attr("font-size", "14px") 
 					.attr("font-family", "serif") 
-					.text(d.name + d.image_link);
+					.text(d.name);
 				})
 				
 				//.on("mouseover", function(d){
@@ -186,7 +196,7 @@
 				.attr("y", 50)
 				.attr("font-size", "16px") 
 				.attr("font-family", "sans-serif") 
-				.text("Red nodes are objects, other nodes are properties");
+				.text("Red nodes are objects, pink nodes are phases, green nodes are materials.");
 
 			
 			});
