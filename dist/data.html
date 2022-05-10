@@ -120,11 +120,11 @@
 					.attr("y", d.y)
 					.attr("font-size", "14px") 
 					.attr("font-family", "serif") 
-					.text(d.name);
+					.text(d.name + d.image_link);
 				})
 				
-				.on("mouseover", function(d){
-					document.getElementById(image_display).innerHTML = "<img src=photos/" + d.image_link + " width=35%>";
+				//.on("mouseover", function(d){
+					//document.getElementById(image_display).innerHTML = "<img src=photos/" + d.image_link + " width=35%>";
 				
 				})
 	
