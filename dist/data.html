@@ -52,7 +52,7 @@
     width: 120px;
     height: 120px;
     height: auto;
-    float: left;
+    float: right;
     margin: 3px;
     padding: 3px;
 }
@@ -88,7 +88,7 @@
 				.force("charge", d3.forceManyBody())
 				.force("link", d3.forceLink(dataset.edges).strength(0.1).distance(100))
 				// this is where the force center is. Try to use this to move the graphic aabove the footer, if it doesnt work remove the footer entirely.
-				.force("center", d3.forceCenter().x(3w/4).y(h/2))
+				.force("center", d3.forceCenter().x(w/4).y(h/2))
 				.force("collision", d3.forceCollide(20));
 
 				//Create SVG element
