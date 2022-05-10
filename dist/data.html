@@ -80,15 +80,15 @@
 				dataset.nodes = json.nodes;
 				dataset.edges = json.edges;
 						
-			    	let w = 600;
+			    	let w = 700;
 				let h = 700;
-				let padding = 150;
+				let padding = 50;
 
 				let force = d3.forceSimulation(dataset.nodes)
 				.force("charge", d3.forceManyBody())
 				.force("link", d3.forceLink(dataset.edges).strength(0.1).distance(100))
 				// this is where the force center is. Try to use this to move the graphic aabove the footer, if it doesnt work remove the footer entirely.
-				.force("center", d3.forceCenter().x(w/4).y(h/2))
+				.force("center", d3.forceCenter().x(w/3).y(h/2))
 				.force("collision", d3.forceCollide(20));
 
 				//Create SVG element
